@@ -24,6 +24,10 @@ a {
 }
 
 
+body {
+    overflow-x: hidden;
+}
+
 /* Hide scrollbar for IE, Edge and Firefox */
 
 .body {
@@ -496,8 +500,8 @@ header nav ul li a.active {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 10px 40px;
-    justify-content: space-evenly;
+    margin: 10px 45px;
+    justify-content: left;
 }
 
 .body .event-box-cont .img-cont {
@@ -507,7 +511,7 @@ header nav ul li a.active {
 }
 
 .body .event-box-cont .img-cont img {
-    margin: 10px;
+    margin: 20px 30px;
     width: 300px;
     transition: 0.3s;
     position: relative;
@@ -521,5 +525,8 @@ header nav ul li a.active {
 @media only screen and (max-width: 1080px) {
     .body .event-p {
         margin: 20px 0px;
+    }
+    .body .event-box-cont {
+        margin: 10px -20px;
     }
 }
