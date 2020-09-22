@@ -19,23 +19,15 @@ a {
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 
-.body::-webkit-scrollbar {
-    display: none;
-}
-
-
 body {
     overflow-x: hidden;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-
 .body {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
+    overflow: hidden;
 }
+
+/* Hide scrollbar for IE, Edge and Firefox */
 
 .fa {
     color: #999;
@@ -194,7 +186,6 @@ header {
     width: 200%;
     box-sizing: border-box;
     animation: move-in 1s ease-out forwards;
-    z-index: 4;
     font-size: 14px;
 }
 
@@ -216,7 +207,7 @@ header {
     margin: 5px;
     display: inline-block;
     line-height: 80px;
-    margin-top: -2%;
+    margin-top: -3%;
 }
 
 .footer .fa-facebook-f {
@@ -251,7 +242,7 @@ header .logo a {
     font-size: 24px;
     float: left;
     width: 100px;
-    color: orange;
+    color: #f28500;
     font-size: 20px;
 }
 
@@ -501,11 +492,14 @@ header nav ul li a.active {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 10px 45px;
+    /* justify-content: space-between; */
     justify-content: left;
 }
 
 .body .event-box-cont .img-cont {
     overflow: hidden;
+    /* width: 32%;
+    max-height: 200px; */
     width: 300px;
     height: 200px;
 }
