@@ -13,13 +13,13 @@
 
 <body>
     <header>
-        <div class="logo"><a href="index2.html"><span class="darker colors">Colors</span><span class="darker">in</span><span class="darker">Bloom</span>Design</a></div>
+        <div class="logo"><a href="index2.html"><span class="darker colors">Colors</span><span class="darker in">in</span><span class="darker">Bloom</span>Design</a></div>
         <nav>
             <ul>
                 <li><a id="home-nav" href="index2.html">Home</a></li>
                 <li><a id="gift-nav" href="gifts.html">Designs/Gifts</a></li>
-                <li><a id="arrange-nav" class="active" href="#">Event Flowers</a></li>
-                <li><a id="holiday-nav" href="holiday.html">Holiday Flowers</a></li>
+                <li><a id="arrange-nav" class="active" href="#">Events</a></li>
+                <li><a id="holiday-nav" href="holiday.html">Holidays</a></li>
                 <li><a id="service-nav" href="about.html">About</a></li>
                 <li><a id="contact-nav" href="contact.html">Contact</a></li>
             </ul>
@@ -29,29 +29,98 @@
         </div>
     </header>
     <div class="body other-body">
-        <h3 class="event-p"> Our Event Flowers</h3>
-        <p class="event-p">Colors in Bloom Design collaborates with clients
-            and specifically tailors each individual client’s needs to
-            bring their visions to life.<br><br>
-            From high profile curated events to intimate
-            dinner parties and everything in between, we
-            strive to bring the highest quality product and design to
-            every event.
+        <h3 class="event-p"> EVENTS</h3>
+        <p class="event-p">Colors in Bloom Design collaborates with clients and specifically tailors each individual client’s needs to bring their visions to life. From high profile curated events to intimate parties and everything in between, we strive to bring the highest
+            quality product and design to every event.
         </p>
-        <div class="event-box-cont">
-            <div class="img-cont"><img src="images/img1.jpg"></div>
-            <div class="img-cont"><img src="images/img2.jpeg"></div>
-            <div class="img-cont"><img src="images/img3.jpg"></div>
-            <div class="img-cont"><img src="images/img12.jpg"></div>
-            <div class="img-cont"><img src="images/img22.jpg"></div>
-            <div class="img-cont"><img src="images/img23.jpg"></div>
-            <div class="img-cont"><img src="images/img1.jpg"></div>
-            <div class="img-cont"><img src="images/img2.jpeg"></div>
-            <div class="img-cont"><img src="images/img3.jpg"></div>
-            <div class="img-cont"><img src="images/img12.jpg"></div>
-            <div class="img-cont"><img src="images/img22.jpg"></div>
-            <div class="img-cont"><img src="images/img23.jpg"></div>
+        <div class="img-box-cont">
+            <div class="top-row">
+                <img src="images/img19.jpg">
+                <img src="images/img3.jpg">
+                <img src="images/img19.jpg">
+            </div>
+            <div class="bottom-row">
+                <img src="images/img4.jpg">
+                <img src="images/img16.jpg">
+            </div>
         </div>
+        <style>
+            .img-box-cont {
+                margin: 75px;
+            }
+            
+            .top-row {
+                display: flex;
+                max-width: 100%;
+                flex-direction: row;
+            }
+            
+            .top-row img {
+                width: 100px;
+                margin: 15px 15px 15px 0;
+            }
+            
+            .top-row img:nth-child(1) {
+                flex-grow: 3;
+            }
+            
+            .top-row img:nth-child(2) {
+                flex-grow: 4;
+            }
+            
+            .top-row img:nth-child(3) {
+                flex-grow: 3;
+                margin: 15px 0 15px 0;
+            }
+            
+            .bottom-row {
+                display: flex;
+                flex-direction: row;
+                max-width: 100%;
+            }
+            
+            .bottom-row img {
+                width: 100px;
+                flex-grow: 5;
+            }
+            
+            .bottom-row img:nth-child(1) {
+                margin-right: 15px;
+            }
+            
+            @media (max-width: 1080px) {
+                .img-box-cont {
+                    margin: 75px 0;
+                }
+            }
+            
+            @media (max-width: 991px) {
+                .top-row img {
+                    width: 100px;
+                    margin: 5px 5px 5px 0;
+                }
+                .top-row img:nth-child(3) {
+                    flex-grow: 3;
+                    margin: 5px 0 5px 0;
+                }
+                .bottom-row img:nth-child(1) {
+                    margin-right: 5px;
+                }
+            }
+            
+            @media (max-width: 575px) {
+                .img-box-cont img {
+                    margin: 5px 0 !important;
+                    width: 100%;
+                }
+                .top-row {
+                    flex-direction: column;
+                }
+                .bottom-row {
+                    flex-direction: column;
+                }
+            }
+        </style>
         <div class="footer">
             <a target="_blank" href="https://www.facebook.com/ColorsInBloomDesign/"><i class="fa fa-facebook-f"></i></a>
             <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank"><i class="fa fa-envelope"></i></a>

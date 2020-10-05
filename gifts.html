@@ -13,13 +13,13 @@
 
 <body>
     <header>
-        <div class="logo"><a href="index2.html"><span class="darker colors">Colors</span><span class="darker">in</span><span class="darker">Bloom</span>Design</a></div>
+        <div class="logo"><a href="index2.html"><span class="darker colors">Colors</span><span class="darker in">in</span><span class="darker">Bloom</span>Design</a></div>
         <nav>
             <ul>
                 <li><a id="home-nav" href="index2.html">Home</a></li>
                 <li><a id="gift-nav" class="active" href="gifts.html">Designs/Gifts</a></li>
-                <li><a id="arrange-nav" href="event.html">Event Flowers</a></li>
-                <li><a id="holiday-nav" href="holiday.html">Holiday Flowers</a></li>
+                <li><a id="arrange-nav" href="event.html">Events</a></li>
+                <li><a id="holiday-nav" href="holiday.html">Holidays</a></li>
                 <li><a id="service-nav" href="about.html">About</a></li>
                 <li><a id="contact-nav" href="contact.html">Contact</a></li>
             </ul>
@@ -29,26 +29,123 @@
         </div>
     </header>
     <div class="body other-body">
-        <h3 class="event-p"> Gifts and Designs</h3>
-        <p class="event-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic nihil, dolore voluptatibus ea cum quis? Aspernatur rerum magni voluptate necessitatibus id beatae provident voluptatibus ipsam, laborum, similique repudiandae pariatur perspiciatis.
-            Voluptates consequatur soluta, ad dolorum deleniti sed cum distinctio exercitationem, ipsam, vitae facilis. Ab, vero omnis! Pariatur similique, error, necessitatibus laborum repellat doloremque dicta excepturi voluptatem odit libero placeat.
-            Architecto alias quo hic distinctio unde quaerat doloribus inventore reprehenderit rerum fugit esse nesciunt blanditiis accusantium maiores non velit voluptate dolorum fugiat exercitationem, mollitia nostrum eos. Excepturi nemo aliquid et,
-            dicta laudantium reprehenderit fuga ipsa velit necessitatibus perferendis vero! Similique, corporis!
+        <h3 class="event-p">DESIGNS / GIFTS</h3>
+        <p class="event-p">Colors in Bloom Design creates exceptional custom arrangements. We pick the highest quality blooms from all over the world to design lush floral arrangements, stunning succulent planters, contemporary orchid designs and festive holiday gifts.
+            We design and deliver gifts, weekly service for your home or office and virtual meetings. We use the latest contemporary containers to complement the arrangement and the clients environment.
         </p>
-        <div class="event-box-cont">
-            <div class="img-cont"><img src="images/img1.jpg"></div>
-            <div class="img-cont"><img src="images/img2.jpeg"></div>
-            <div class="img-cont"><img src="images/img3.jpg"></div>
-            <div class="img-cont"><img src="images/img12.jpg"></div>
-            <div class="img-cont"><img src="images/img22.jpg"></div>
-            <div class="img-cont"><img src="images/img23.jpg"></div>
-            <div class="img-cont"><img src="images/img1.jpg"></div>
-            <div class="img-cont"><img src="images/img2.jpeg"></div>
-            <div class="img-cont"><img src="images/img3.jpg"></div>
-            <div class="img-cont"><img src="images/img12.jpg"></div>
-            <div class="img-cont"><img src="images/img22.jpg"></div>
-            <div class="img-cont"><img src="images/img23.jpg"></div>
+        <div id="slider-gi"><img id="slide-img" src="images/img4.jpg"></div>
+        <div class="slide">
+            <!-- <button id="slide-left-thumb"><i class="fa fa-arrow-left arrows"></i></button> -->
+            <div class="slider-thum" id="sliderThum">
+                <img onclick="slide('images/img4.jpg')" src="images/img4.jpg" class="thumbnail">
+                <img onclick="slide('images/img5.jpg')" src="images/img5.jpg" class="thumbnail">
+                <img onclick="slide('images/img6.JPG')" src="images/img6.JPG" class="thumbnail">
+                <img onclick="slide('images/img7.jpg')" src="images/img7.jpg" class="thumbnail">
+                <img onclick="slide('images/img8.jpg')" src="images/img8.jpg" class="thumbnail">
+                <img onclick="slide('images/img7.jpg')" src="images/img7.jpg" class="thumbnail">
+                <img onclick="slide('images/img8.jpg')" src="images/img8.jpg" class="thumbnail">
+                <img onclick="slide('images/img4.jpg')" src="images/img4.jpg" class="thumbnail">
+                <img onclick="slide('images/img5.jpg')" src="images/img5.jpg" class="thumbnail">
+                <img onclick="slide('images/img6.JPG')" src="images/img6.JPG" class="thumbnail">
+                <img onclick="slide('images/img7.jpg')" src="images/img7.jpg" class="thumbnail">
+                <img onclick="slide('images/img8.jpg')" src="images/img8.jpg" class="thumbnail">
+                <img onclick="slide('images/img7.jpg')" src="images/img7.jpg" class="thumbnail">
+                <img onclick="slide('images/img8.jpg')" src="images/img8.jpg" class="thumbnail">
+            </div>
+            <!-- <button id="slide-right-thumb"><i class="fa fa-arrow-right arrows"></i></button> -->
         </div>
+        <!-- <script>
+                const thumbSlideRight = document.getElementById('slide-right-thumb');
+                const thumbSlideLeft = document.getElementById('slide-left-thumb');
+                const sliderThum = document.getElementById('sliderThum');
+                thumbSlideLeft.onclick = function() {
+                    sliderThum.style.transform = 'translateX(150px)'
+                }
+                thumbSlideRight.onclick = function() {
+                    sliderThum.style.transform = 'translateX(-150px)'
+                }
+            </script> -->
+        <style>
+            #slider-gi img {
+                width: 85%;
+                margin: 0 75px;
+                height: 75vh;
+                margin-top: 30px;
+            }
+            
+            .translate-left {
+                transform: translateX(150px);
+            }
+            
+            .slide {
+                display: flex;
+                flex-direction: row;
+                max-width: 85%;
+                margin-left: 75px;
+                align-items: center;
+            }
+            
+            .slide button {
+                border: none;
+                background: none;
+            }
+            
+            .slider-thum {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow: scroll;
+                position: relative;
+            }
+            
+            .thumbnail {
+                width: 150px;
+                height: 100px;
+                margin-right: 5px;
+                transition: 0.3s ease;
+            }
+            
+            .thumbnail:active {
+                opacity: 1;
+                transition: 0.3s ease;
+            }
+            
+            .thumbnail::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                z-index: 1;
+                background: rgba(0, 0, 0, .5);
+            }
+            
+            @media (max-width: 1080px) {
+                .slide {
+                    margin-left: 0;
+                }
+                #slider-gi img {
+                    margin: 0;
+                }
+                .thumbnail {
+                    width: 100px;
+                    height: 75px;
+                }
+            }
+            
+            @media (min-width: 1500px) {
+                .thumbnail {
+                    width: 200px;
+                    height: 150px;
+                }
+                h3 {
+                    font-size: 28px;
+                }
+                p {
+                    font-size: 22px;
+                }
+            }
+        </style>
         <div class="footer">
             <a target="_blank" href="https://www.facebook.com/ColorsInBloomDesign/"><i class="fa fa-facebook-f"></i></a>
             <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank"><i class="fa fa-envelope"></i></a>
@@ -65,6 +162,11 @@
             $('div').toggleClass('active')
         })
     })
+
+    function slide(string) {
+        const slider = document.getElementById('slide-img');
+        slider.src = string;
+    }
 </script>
 
 </html>
